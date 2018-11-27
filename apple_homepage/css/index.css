@@ -1,0 +1,335 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 1000px;
+    border: 1px solid red;
+    margin: 0 auto;
+
+}
+.footermobile{
+    display: none;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    /*border: 1px solid pink;*/
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.nav-mobile{
+    display: none;
+}
+.nav-desktop{
+    width: 100%;
+    margin: 0 auto;
+}
+.slideBar{
+    display: none;
+}
+.logowidth{
+    width: 20%;
+    padding: 0;
+}
+.logo{
+   float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid yellow;
+    background: url("../images/apple.png");
+    background-size: contain;
+    margin-left: 32px;
+    margin-top: 7px;
+}
+.nav{
+    width: 80%;
+    /*border: 1px solid white;*/
+    float: left;
+    padding-left: 20px;
+    text-align: center;
+}
+.nav ul{
+    display: inline-block;
+    list-style: none;
+}
+.nav>ul>li{
+    float: left;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.nav .section1,.section2,.section3{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid red;
+
+}
+/*.nav{*/
+    /*float: right;*/
+    /*width: 70%;*/
+    /*height: 50px;*/
+
+
+/*}*/
+/*.nav ul {*/
+    /*float: right;*/
+    /*list-style: none;*/
+    /*width: 70%;*/
+    /*display:inline-block;*/
+/*}*/
+/*.nav ul li{*/
+    /*float: left;*/
+    /*font-size: 20px;*/
+    /*line-height: 50px;*/
+    /*padding-right: 20px;*/
+
+/*}*/
+
+
+/*#project li{*/
+    /*width: 20px;*/
+    /*height: 30px;*/
+    /*margin: 6px;*/
+/*}*/
+/*#project li a{*/
+   /*border: 1px solid blue;*/
+    /*text-decoration: none;*/
+/*}*/
+/*#project{*/
+    /*display: none;*/
+    /*margin: 0px;*/
+/*}*/
+#team{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    float: left;
+    margin-top: 20px;
+    z-index: 999;
+    display: none;
+}
+/*#team li{*/
+    /*width: 20px;*/
+    /*height: 30px;*/
+    /*margin: 6px;*/
+/*}*/
+/*#team li a{*/
+    /*border: 1px solid blue;*/
+    /*text-decoration: none;*/
+/*}*/
+/*#team{*/
+    /*display: none;*/
+    /*margin: 0px;*/
+/*}*/
+div.nav2{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid pink;*/
+    border-top: 1px solid white;
+    background-color: black;
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+}
+.nav2 ul.phonename{
+    width: 10%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 20px;
+    /* margin-left: 32px; */
+    list-style: none;
+    /* height: 50px; */
+    /* margin-top: 10px; */
+    /* font-size: 20px; */
+    box-sizing: border-box;
+}
+
+.nav2 ul.phonelist{
+    margin: 0;
+    padding: 0;
+     float: right;
+    display: inline-block;
+    width: 90%;
+    height: 50px;
+    list-style: none;
+    line-height: 50px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.nav2 ul.phonelist li{
+     float: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+.footerdesktop{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+.footerdesktop div{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    float: left;
+    padding-left: 30px;
+
+}
+.footerdesktop ul{
+    list-style:none;
+   padding-left: 0px;
+
+}
+.footerdesktop ul li{
+    padding: 5px;
+}
+.footerdesktop .footdiv1{
+    width: 20%;
+}
+.footerdesktop .footdiv2{
+    width: 20%;
+}
+.footerdesktop .footdiv3{
+    width: 20%;
+}
+.footerdesktop .footdiv4{
+    width: 20%;
+}
+.footerdesktop h2{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.footdiv1>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footdiv1>ul>li{
+    padding: 5px;
+}
+
+.expandlink + ul{
+    display: none;
+}
+
+.expandlink.active + ul{
+    display: block;
+}
+
+.icon{
+    width: 40px;
+    height: 20px;
+    border: 1px solid red;
+    float: left;
+    margin-left: 10px;
+}
+
+@media all and (max-width:768px){
+
+    .nav-desktop{
+
+        display: none;
+    }
+    .footerdesktop{
+        display: none;
+    }
+    .footermobile{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .slideBar{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .mlogo{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid yellow;
+        background: url("../images/apple.png");
+        background-size: contain;
+
+    }
+    .slideBar{
+         display: none;
+    }
+    .tc1{
+        display: block;
+    }
+    .tc2{
+        display: none;
+    }
+    .iphone{
+        display: none;
+    }
+    .mac{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .footermobile a{
+        display: block;
+    }
+    .footermobile ul{
+        list-style: none;
+    }
+    .footdiv1_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+    }
+    .footdiv2_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+    }
+    .footdiv3_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+    }
+    .footdiv4_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+    }
+    .footdiv5_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+    }
+    .footdiv6_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+    }
+    .footdiv7_mobile{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+
+
