@@ -1,2 +1,2 @@
-# trainingcode
-This is the training source from the company
+# code
+javascript open source for everyone
